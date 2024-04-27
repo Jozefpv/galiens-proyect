@@ -6,6 +6,7 @@ import Coin from './galiencoin.png'
 import Separator from './separator/separator'
 import About from './about/about'
 import Ranking from './ranking/ranking'
+import Galienomics from './galienomics/galienomics';
 
 import './App.css'
 
@@ -38,6 +39,8 @@ function App() {
         <About/>
         <Separator/>
         <Ranking/>
+        <Separator/>
+        <Galienomics/>
         <Separator/>
       </div>
     </div>

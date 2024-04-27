@@ -5,6 +5,9 @@ import { bg, fg, bird0, bird1, bird2, pipeN, pipeS, gameover, _ok_, splash, read
 import { width, height } from '../common/common';
 import { observer } from 'mobx-react';
 import { rungame, states } from '../store/store';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
+
 
 const SpriteWrapper = observer(
   class SpriteWrapper extends Component {
@@ -127,7 +130,9 @@ export const Ready = observer(
 
 const Flappy = observer(class Flappy extends Component {
   state = {
-    isLoading: false
+    isLoading: false,
+    value: 'x891089298737980olkjjslkad091',
+    copied: false,
   };
 
   componentDidMount() {
@@ -200,16 +205,23 @@ const Flappy = observer(class Flappy extends Component {
           </div>
         </div>
         <div>
-          <div style={{zIndex:"4"}}>
-            {(currentstate === states.Score) ? (
+          <div style={{ zIndex: "4" }}>
+            {currentstate === states.Score && (
               <div className='scoreForm'>
                 <span className='scoreText'>Submit score</span>
                 <input className="inputWallet" id="walletAddress" type='text' placeholder='Wallet address'></input>
-                <button onClick={this.sendScore} className='buttonSendScore'>Send to ranking</button>
+                <button onClick={this.sendScore} className='buttonSendScore' disabled={this.state.isLoading}>
+                  {this.state.isLoading ? 'Sending...' : 'Send to ranking'}
+                </button>
               </div>
-            ) : null}
+            )}
           </div>
-          {isLoading && <div>Cargando...</div>}
+        </div>
+        <div className='urlLink' title='Click to Copy'>
+          <CopyToClipboard text={this.state.value}
+            onCopy={() => this.setState({ copied: true })}>
+            <span className='caCode'>CA: x891089298737980olkjjslkad091</span>
+          </CopyToClipboard>
         </div>
       </div>
     );

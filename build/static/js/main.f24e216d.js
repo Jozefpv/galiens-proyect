@@ -15327,7 +15327,7 @@
 	      var score = _this10.props.game.score;
 	      var walletAddress = document.getElementById('walletAddress').value;
 	
-	      fetch('http://localhost:3001/users', {
+	      fetch('https://galiens-api.onrender.com/users', {
 	        method: 'POST',
 	        headers: {
 	          'Content-Type': 'application/json'
@@ -15646,7 +15646,7 @@
 	                        case 0:
 	                            _context.prev = 0;
 	                            _context.next = 3;
-	                            return fetch('http://localhost:3001/ranking');
+	                            return fetch('https://galiens-api.onrender.com/ranking');
 	
 	                        case 3:
 	                            response = _context.sent;
@@ -18825,4 +18825,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.eb2dc7b0.js.map
+//# sourceMappingURL=main.f24e216d.js.map

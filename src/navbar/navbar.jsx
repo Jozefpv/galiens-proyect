@@ -15,20 +15,18 @@ function Navbar() {
             <li className="navbarItems"><Link to="/" spy={true} smooth={true} offset={-100} duration={500}>PLAY</Link></li>
             <li className="navbarItems"><Link to="about" spy={true} smooth={true} offset={-100} duration={500}>ABOUT</Link></li>
             <li className="navbarItems"><Link to="ranking" spy={true} smooth={true} offset={-100} duration={500}>RANKING</Link></li>
-            <li className="navbarItems"><Link to="/" spy={true} smooth={true} offset={-100} duration={500}>GALIENOMICS</Link></li>
+            <li className="navbarItems"><Link to="galienomics" spy={true} smooth={true} offset={-100} duration={500}>GALIENOMICS</Link></li>
           </ul>
         </div>
         <div className="rrssContainer">
-          <button className="rrssButton">
+          <button className="rrssButton" onClick={() => window.open("https://twitter.com/Galiensonsol", "_blank")}>
             <FaXTwitter style={{ color: "black", fontSize: "25px" }} />
           </button>
-          <button className="rrssButton">
+          <button className="rrssButton" onClick={() => window.open("https://t.me/+cY14taE9fPRmMjI0", "_blank")}>
             <FaPaperPlane style={{ color: "black", fontSize: "25px" }} />
           </button>
-          <button className="rrssButton">
-            <FaDiscord style={{ color: "black", fontSize: "25px" }} />
-          </button>
         </div>
+
       </div>
     </div>
   )

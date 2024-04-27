@@ -17,7 +17,18 @@
 .scoreContainer{
   font-family: "Londrina Solid", sans-serif;
   font-size: 18px;
-  color: #ff9009;}
+  color: #ff9009;
+}
+.urlLink{
+  margin:10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 3px solid black;
+  border-width: 3px 6px 6px 3px;
+  border-radius: 10px;
+  font-family: "Londrina Solid", sans-serif;
+}
 
   .scoreForm{
     margin:10px;
@@ -28,6 +39,12 @@
     border-width: 3px 6px 6px 3px;
     border-radius: 10px;
     font-family: "Londrina Solid", sans-serif;
+  }
+
+  .caCode{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
   }
 
   .inputWallet{

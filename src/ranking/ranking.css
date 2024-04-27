@@ -1,6 +1,10 @@
 .rankingTitle {
     font-family: "Londrina Solid", sans-serif;
-    font-size: 50px;
+    font-size: 75px;
+    color: #ff9009;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 2px;
+
 }
 
 .tableContainer {

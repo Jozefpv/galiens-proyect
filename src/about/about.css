@@ -35,9 +35,11 @@
 }
 
 .title_paragraph{
-    color: #000000;
+    color: #ff9009;
     font-family: "Londrina Solid", sans-serif;
-
+    text-shadow: 2px 2px #000;
+    letter-spacing: 2px;
+    font-size: 75px;
 }
 
 .block_paragraph{
