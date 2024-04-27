@@ -83,4 +83,8 @@
     .galienCoin{
         width: 20vw;
     }
+
+    .wrapper{
+        height: 115vh;
+    }
 }
