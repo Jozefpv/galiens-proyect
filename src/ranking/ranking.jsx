@@ -30,7 +30,7 @@ const Ranking = () => {
 
     const fetchRankingData = async () => {
         try {
-            const response = await fetch('http://localhost:3001/ranking');
+            const response = await fetch('https://galiens-api.onrender.com/ranking');
 
             if (!response.ok) {
                 throw new Error('Error al obtener el ranking');

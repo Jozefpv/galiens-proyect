@@ -144,7 +144,7 @@ const Flappy = observer(class Flappy extends Component {
     const score = this.props.game.score;
     const walletAddress = document.getElementById('walletAddress').value;
 
-    fetch('http://localhost:3001/users', {
+    fetch('https://galiens-api.onrender.com/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
