@@ -14,7 +14,7 @@ function Navbar() {
           <ul className="navbarItemsContainer">
             <li className="navbarItems"><Link to="/" spy={true} smooth={true} offset={-100} duration={500}>PLAY</Link></li>
             <li className="navbarItems"><Link to="about" spy={true} smooth={true} offset={-100} duration={500}>ABOUT</Link></li>
-            <li className="navbarItemsRanking"><Link to="ranking" spy={true} smooth={true} offset={-100} duration={500}>RANKING</Link></li>
+            <li className="navbarItemsRanking"><Link to="ranking" spy={true} smooth={true} offset={-100} duration={500}>LEADERBOARD</Link></li>
             <li className="navbarItems"><Link to="galienomics" spy={true} smooth={true} offset={-100} duration={500}>GALIENOMICS</Link></li>
           </ul>
         </div>

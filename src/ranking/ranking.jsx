@@ -80,7 +80,7 @@ const Ranking = () => {
 
     return (
         <div className='rankingContainer' id='ranking'>
-            <h1 className='rankingTitle'>Ranking</h1>
+            <h1 className='rankingTitle'>Leaderboard</h1>
             {ranking ? (
                 <div>
                     <img src={Galien} style={{ width: "80px", transform:"translateY(5px)" }}></img>
@@ -102,7 +102,7 @@ const Ranking = () => {
                     </div>
                 </div>
             ) : (
-                <p>Cargando ranking...</p>
+                <p>Loading leaderboard...</p>
             )}
         </div>
     );

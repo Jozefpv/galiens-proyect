@@ -211,7 +211,7 @@ const Flappy = observer(class Flappy extends Component {
                 <span className='scoreText'>Submit score</span>
                 <input className="inputWallet" id="walletAddress" type='text' placeholder='Wallet address'></input>
                 <button onClick={this.sendScore} className='buttonSendScore' disabled={this.state.isLoading}>
-                  {this.state.isLoading ? 'Sending...' : 'Send to ranking'}
+                  {this.state.isLoading ? 'Sending...' : 'Send to leaderboard'}
                 </button>
               </div>
             )}
