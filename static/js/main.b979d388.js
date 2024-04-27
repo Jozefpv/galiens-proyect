@@ -15689,7 +15689,7 @@
 	              _react2.default.createElement(
 	                'button',
 	                { onClick: this.sendScore, className: 'buttonSendScore', disabled: this.state.isLoading },
-	                this.state.isLoading ? 'Sending...' : 'Send to ranking'
+	                this.state.isLoading ? 'Sending...' : 'Send to leaderboard'
 	              )
 	            )
 	          )
@@ -15842,7 +15842,7 @@
 	            _react2.default.createElement(
 	              _reactScroll.Link,
 	              { to: "ranking", spy: true, smooth: true, offset: -100, duration: 500 },
-	              "RANKING"
+	              "LEADERBOARD"
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -16038,7 +16038,7 @@
 	        _react2.default.createElement(
 	            'h1',
 	            { className: 'rankingTitle' },
-	            'Ranking'
+	            'Leaderboard'
 	        ),
 	        ranking ? _react2.default.createElement(
 	            'div',
@@ -16085,7 +16085,7 @@
 	        ) : _react2.default.createElement(
 	            'p',
 	            null,
-	            'Cargando ranking...'
+	            'Loading leaderboard...'
 	        )
 	    );
 	};
@@ -19187,4 +19187,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.a4ddc571.js.map
+//# sourceMappingURL=main.b979d388.js.map
