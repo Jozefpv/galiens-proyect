@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .navbarItemsContainer {
+    .navbarItems {
       display: none;
     }
 
