@@ -1,13 +1,13 @@
 .wrapper {
     width: 100%;
-    display: flex; 
+    display: flex;
     height: 100vh;
     z-index: 1;
     flex-direction: column;
     position: relative;
 }
 
-.section_hero{
+.section_hero {
     width: 100%;
     background-color: transparent;
     justify-content: center;
@@ -17,14 +17,14 @@
     justify-content: flex-start;
 }
 
-.block_chara{
+.block_chara {
     width: 40%;
     justify-content: center;
     align-items: flex-end;
     display: flex;
 }
 
-.block_logo{
+.block_logo {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -46,12 +46,12 @@
     letter-spacing: 10px;
 }
 
-.coinTitle{
+.coinTitle {
     text-shadow: 2px 2px #000;
 }
 
 
-.galien{
+.galien {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -61,9 +61,9 @@
 
 }
 
-.galienCoin{
+.galienCoin {
     width: 150px;
-    padding-right:15px;
+    padding-right: 15px;
 }
 
 @media screen and (min-width: 1080px) {
@@ -74,17 +74,26 @@
 
 @media screen and (max-width: 700px) {
     .wrapper {
-        flex-direction: row; 
+        flex-direction: row;
     }
-    .block_logo{
+
+    .block_logo {
         margin-top: 30px;
     }
 
-    .galienCoin{
+    .galienCoin {
         width: 20vw;
     }
 
-    .wrapper{
+    .wrapper {
         height: 125vh;
+    }
+
+    .titleContainer {
+        color: #ff9009;
+        font-family: "Londrina Solid", sans-serif;
+        text-shadow: 2px 2px #000;
+        letter-spacing: 2px;
+        font-size: 75px;
     }
 }

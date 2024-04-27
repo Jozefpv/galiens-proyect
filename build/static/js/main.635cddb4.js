@@ -15838,7 +15838,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "li",
-	            { className: "navbarItems" },
+	            { className: "navbarItemsRanking" },
 	            _react2.default.createElement(
 	              _reactScroll.Link,
 	              { to: "ranking", spy: true, smooth: true, offset: -100, duration: 500 },
@@ -19187,4 +19187,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.ad83baf0.js.map
+//# sourceMappingURL=main.635cddb4.js.map
