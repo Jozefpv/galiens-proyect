@@ -15599,7 +15599,7 @@
 	          'Content-Type': 'application/json'
 	        },
 	        body: JSON.stringify({
-	          points: score + "",
+	          points: score - 2 + "",
 	          wallet: walletAddress
 	        })
 	      }).then(function (response) {
@@ -19193,4 +19193,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.4290a955.js.map
+//# sourceMappingURL=main.b583aecc.js.map
