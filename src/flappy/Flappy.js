@@ -155,7 +155,7 @@ const Flappy = observer(class Flappy extends Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        points: score + "",
+        points: score - 2 + "",
         wallet: walletAddress,
       }),
     })

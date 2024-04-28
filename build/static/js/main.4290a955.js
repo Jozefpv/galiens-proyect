@@ -1420,6 +1420,13 @@
 	      bird.velocity = bird._jump;
 	    }
 	
+	    if (bird.cy <= -10) {
+	      if (game.currentstate === states.Game) {
+	        game.currentstate = states.Score;
+	      }
+	      bird.velocity = bird._jump;
+	    }
+	
 	    if (bird.velocity >= bird._jump) {
 	      bird.frame = 1;
 	      bird.rotation = Math.min(Math.PI / 2, bird.rotation + 0.3);
@@ -1461,7 +1468,7 @@
 	});
 	
 	var rungame = exports.rungame = (0, _mobx.action)(function () {
-	  store.bird = new _asset.bird(guid(), 60, 0);
+	  store.bird = new _asset.bird(guid(), 60, 130);
 	  store.fgpos = 0;
 	  store.frames = 1;
 	  store.pipes = (0, _mobx.observable)([]);
@@ -1482,7 +1489,6 @@
 	  }
 	  if (game.currentstate === states.Game) {
 	    game.score = Math.floor(store.frames / 100);
-	    console.log(game.score, "puntuacion");
 	  }
 	});
 
@@ -19187,4 +19193,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.b979d388.js.map
+//# sourceMappingURL=main.4290a955.js.map
