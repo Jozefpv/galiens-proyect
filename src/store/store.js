@@ -69,6 +69,13 @@ const updateBird = function (bird) {
       bird.velocity = bird._jump;
     }
 
+    if (bird.cy <= -10) {
+      if (game.currentstate === states.Game) {
+        game.currentstate = states.Score;
+      }
+      bird.velocity = bird._jump;
+    }
+
     if (bird.velocity >= bird._jump) {
       bird.frame = 1;
       bird.rotation = Math.min(Math.PI / 2, bird.rotation + 0.3);
@@ -77,6 +84,7 @@ const updateBird = function (bird) {
     }
   }
 };
+
 
 const updatePipe = function () {
   if (store.frames % 100 === 0) {
@@ -119,7 +127,7 @@ export const birdjump = action(function (bird) {
 });
 
 export const rungame = action(function () {
-  store.bird = new bird(guid(), 60, 0);
+  store.bird = new bird(guid(), 60, 130);
   store.fgpos = 0;
   store.frames = 1;
   store.pipes = observable([]);
@@ -140,7 +148,6 @@ export const updateFrame = action(function () {
   }
   if (game.currentstate === states.Game) {
     game.score = Math.floor(store.frames / 100);
-    console.log(game.score, "puntuacion") 
   }
 });
 
