@@ -1,6 +1,5 @@
 import React from 'react'
 import './wrapper.css'
-import GalienCoin from './galiencoin.png'
 import Flappy from '../flappy/Flappy'
 import { store, updateFrame, birdjump, game, states, rungame } from '../store/store'
 
