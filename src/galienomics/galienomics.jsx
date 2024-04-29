@@ -1,5 +1,4 @@
 import React from 'react'
-import Stadistics from './stadistics.png'
 import './galienomics.css'
 
 function Galienomics() {
