@@ -1,8 +1,6 @@
 import React from 'react'
 import './wrapper.css'
-import Galien from './galien.png'
 import GalienCoin from './galiencoin.png'
-import Game from './game.png'
 import Flappy from '../flappy/Flappy'
 import { store, updateFrame, birdjump, game, states, rungame } from '../store/store'
 
@@ -12,11 +10,11 @@ function Wrapper() {
         <div className="wrapper">
             <div className='section_hero'>
                 <div className='block_chara'>
-                    <img src={Galien} className='galien'></img>
+                    <img src='https://storage.googleapis.com/galiens/Alien1.png' className='galien'></img>
                 </div>
                 <div className='block_logo'>
                     <div className='titleContainer'>
-                        <img src={GalienCoin} className='galienCoin' alt="Alien Fumeta" />
+                        <img src='https://storage.googleapis.com/galiens/Galien%20Coin.png' className='galienCoin' alt="Alien Fumeta" />
                         <span className='coinTitle'>GALIENS</span>
                     </div>
                     <div>

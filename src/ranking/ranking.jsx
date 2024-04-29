@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import Galien from './galien.png'
 import './ranking.css'
 
 const Ranking = () => {
@@ -37,7 +36,6 @@ const Ranking = () => {
             }
 
             const data = await response.json();
-            console.log(data)
             setRanking(data);
         } catch (error) {
             console.error('Error al obtener el ranking:', error);
@@ -83,7 +81,7 @@ const Ranking = () => {
             <h1 className='rankingTitle'>Leaderboard</h1>
             {ranking ? (
                 <div>
-                    <img src={Galien} style={{ width: "80px", transform:"translateY(5px)" }}></img>
+                    <img src='https://storage.googleapis.com/galiens/Alien1.png' style={{ width: "80px", transform:"translateY(5px)" }}></img>
                     <div className='tableContainer'>
                         <table className='rankingTable'>
                             <tr>
