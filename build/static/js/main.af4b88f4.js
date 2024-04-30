@@ -1474,21 +1474,65 @@
 	  store.pipes = (0, _mobx.observable)([]);
 	  game.currentstate = states.Game;
 	  game.score = 0; // Reset the score when starting a new game
+	
+	  // Calculamos el tiempo de referencia para el bucle de juego
+	  var lastFrameTimeMs = performance.now();
+	
+	  // Función para el bucle de juego
+	  function gameLoop(timestamp) {
+	    // Calculamos el tiempo transcurrido desde la última actualización en milisegundos
+	    var elapsed = timestamp - lastFrameTimeMs;
+	
+	    // Limitamos la velocidad de cuadros por segundo
+	    if (elapsed > frameTime) {
+	      lastFrameTimeMs = timestamp - elapsed % frameTime;
+	
+	      // Actualizamos el juego
+	      updateFrame();
+	
+	      // Llamamos a gameLoop() de nuevo para el próximo frame
+	      requestAnimationFrame(gameLoop);
+	    } else {
+	      // Si no ha pasado suficiente tiempo, esperamos hasta el próximo frame
+	      requestAnimationFrame(gameLoop);
+	    }
+	  }
+	
+	  // Comenzamos el bucle de juego
+	  lastFrameTimeMs = performance.now();
+	  requestAnimationFrame(gameLoop);
 	});
 	
+	// Calculamos el tiempo de referencia para el bucle de juego
+	var lastFrameTimeMs = 0;
+	
+	// Definimos la velocidad de cuadros por segundo deseada
+	var FPS = 60;
+	
+	// Calculamos el tiempo entre cada actualización de cuadro en milisegundos
+	var frameTime = 1000 / FPS;
+	
+	// Función para actualizar el juego en cada frame
 	var updateFrame = exports.updateFrame = (0, _mobx.action)(function () {
-	  store.frames++;
-	  store.fgpos = (store.fgpos - 2) % 14;
-	  fg1.cx = store.fgpos;
-	  fg2.cx = store.fgpos + _Sprite.fg_w;
+	  var elapsed = performance.now() - lastFrameTimeMs;
 	
-	  updateBird(store.bird);
+	  while (elapsed >= frameTime) {
+	    store.frames++;
+	    store.fgpos = (store.fgpos - 2) % 14;
+	    fg1.cx = store.fgpos;
+	    fg2.cx = store.fgpos + _Sprite.fg_w;
 	
-	  if (game.currentstate === states.Game) {
-	    updatePipe();
-	  }
-	  if (game.currentstate === states.Game) {
-	    game.score = Math.floor(store.frames / 100);
+	    updateBird(store.bird);
+	
+	    if (game.currentstate === states.Game) {
+	      updatePipe();
+	    }
+	    if (game.currentstate === states.Game) {
+	      game.score = Math.floor(store.frames / 100);
+	    }
+	
+	    elapsed -= frameTime;
+	    lastFrameTimeMs += frameTime;
 	  }
 	});
 
@@ -19140,4 +19184,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.bcedff6a.js.map
+//# sourceMappingURL=main.af4b88f4.js.map
