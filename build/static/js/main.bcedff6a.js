@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/galiens-proyect/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -19140,4 +19140,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.d0018a3e.js.map
+//# sourceMappingURL=main.bcedff6a.js.map
