@@ -15623,7 +15623,7 @@
 	
 	    return _ret = (_temp = (_this10 = _possibleConstructorReturn(this, (_ref = Flappy.__proto__ || Object.getPrototypeOf(Flappy)).call.apply(_ref, [this].concat(args))), _this10), _this10.state = {
 	      isLoading: false,
-	      value: 'x891089298737980olkjjslkad091',
+	      value: '',
 	      copied: false
 	    }, _this10.appUpdateFrame = function () {
 	      _this10.props.updateFrame();
@@ -15752,7 +15752,7 @@
 	            _react2.default.createElement(
 	              'span',
 	              { className: 'caCode' },
-	              'CA: x891089298737980olkjjslkad091'
+	              'CA: ------------'
 	            )
 	          )
 	        )
@@ -19184,4 +19184,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.b5c009c4.js.map
+//# sourceMappingURL=main.64f0e8af.js.map
