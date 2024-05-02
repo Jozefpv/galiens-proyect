@@ -131,7 +131,7 @@ export const Ready = observer(
 const Flappy = observer(class Flappy extends Component {
   state = {
     isLoading: false,
-    value: 'x891089298737980olkjjslkad091',
+    value: '',
     copied: false,
   };
 
@@ -220,7 +220,7 @@ const Flappy = observer(class Flappy extends Component {
         <div className='urlLink' title='Click to Copy'>
           <CopyToClipboard text={this.state.value}
             onCopy={() => this.setState({ copied: true })}>
-            <span className='caCode'>CA: x891089298737980olkjjslkad091</span>
+            <span className='caCode'>CA: ------------</span>
           </CopyToClipboard>
         </div>
       </div>
