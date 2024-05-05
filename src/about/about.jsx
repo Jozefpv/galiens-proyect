@@ -13,7 +13,7 @@ function About() {
                     <div className='block_paragraph'>
                         <p className='para'>
                             <p style={{ display: 'block', paddingRight:"10px" }}>
-                                Inspired by the aliens of Toy Story, $GALIEN symbolized their quest for a better place among the stars.
+                                Inspired by the aliens of Toy Gory, $GALIEN symbolized their quest for a better place among the stars.
 
                                 With a growing community, $GALIEN's popularity soared. Together, they spread the word, attracting supporters from across the galaxy.
 
