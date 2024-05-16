@@ -63,12 +63,12 @@
 
 
 .navbarItems:hover{
-    color: rgb(178, 230, 167);
+    color: #28BDFF;
     cursor: pointer;
 }
 
 .navbarItemsRanking:hover{
-    color: rgb(178, 230, 167);
+    color: #28BDFF;
     cursor: pointer;
 }
 

@@ -206,7 +206,7 @@ const Flappy = observer(class Flappy extends Component {
         </div>
         <div>
           <div style={{ zIndex: "4" }}>
-            {currentstate === states.Score && (
+            
               <div className='scoreForm'>
                 <span className='scoreText'>Submit score</span>
                 <input className="inputWallet" id="walletAddress" type='text' placeholder='Wallet address'></input>
@@ -214,7 +214,7 @@ const Flappy = observer(class Flappy extends Component {
                   {this.state.isLoading ? 'Sending...' : 'Send to leaderboard'}
                 </button>
               </div>
-            )}
+            
           </div>
         </div>
         <div className='urlLink' title='Click to Copy'>

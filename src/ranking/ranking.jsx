@@ -78,10 +78,10 @@ const Ranking = () => {
 
     return (
         <div className='rankingContainer' id='ranking'>
-            <h1 className='rankingTitle'>Leaderboard</h1>
+            <span className='rankingTitle'>Leaderboard</span>
             {ranking ? (
-                <div>
-                    <img src='https://storage.googleapis.com/galiens/Alien1.png' style={{ width: "80px", transform:"translateY(5px)" }}></img>
+                <div className='rankingSection'>
+                    <img src='https://cdn.discordapp.com/attachments/315600040968060929/1240779352954638436/Untitled_Artwork_1.png?ex=6647cd52&is=66467bd2&hm=55502379f608b28724c6c41c3d4500cc5443baf44be9d4776709334a2c4bb7df&' style={{ width: "120px", transform:"translateY(30px)" }}></img>
                     <div className='tableContainer'>
                         <table className='rankingTable'>
                             <tr>

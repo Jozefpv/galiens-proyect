@@ -35,7 +35,7 @@
 }
 
 .title_paragraph{
-    color: #ff9009;
+    color: #FEC618;
     font-family: "Londrina Solid", sans-serif;
     text-shadow: 2px 2px #000;
     letter-spacing: 2px;
@@ -46,7 +46,7 @@
     justify-content: center;
     align-items: flex-start;
     display: flex;
-    overflow-y: scroll;
+   /* overflow-y: scroll;*/
     max-height: 400px;
     background: linear-gradient(#fff 10px, #0000 40px calc(100% - 40px), #fff calc(100% - 10px)) local, var(--g) top / 100% 200%, var(--g) bottom / 100% 200%;
 }
