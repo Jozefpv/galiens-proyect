@@ -78,7 +78,7 @@
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(81);
+	  module.exports = __webpack_require__(83);
 	} else {
 	  module.exports = require('./cjs/react.development.js');
 	}
@@ -1203,7 +1203,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _sheet = __webpack_require__(64);
+	var _sheet = __webpack_require__(65);
 	
 	var _sheet2 = _interopRequireDefault(_sheet);
 	
@@ -1771,11 +1771,11 @@
 	
 	var _utils2 = _interopRequireDefault(_utils);
 	
-	var _smooth = __webpack_require__(78);
+	var _smooth = __webpack_require__(80);
 	
 	var _smooth2 = _interopRequireDefault(_smooth);
 	
-	var _cancelEvents = __webpack_require__(77);
+	var _cancelEvents = __webpack_require__(79);
 	
 	var _cancelEvents2 = _interopRequireDefault(_cancelEvents);
 	
@@ -2521,7 +2521,7 @@
 
 	"use strict";
 	
-	var deselectCurrent = __webpack_require__(84);
+	var deselectCurrent = __webpack_require__(86);
 	
 	var clipboardToIE11Formatting = {
 	  "text/plain": "Text",
@@ -3100,7 +3100,7 @@
 /* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e,t=__webpack_require__(2),r=__webpack_require__(1),n=(e=r)&&"object"==typeof e&&"default"in e?e.default:e,o=__webpack_require__(4),i=__webpack_require__(86);if(!r.useState)throw new Error("mobx-react-lite requires React with Hooks support");if(!t.makeObservable)throw new Error("mobx-react-lite@3 requires mobx at least version 6 to be available");function a(e){e()}function s(e){e||(e=a),t.configure({reactionScheduler:e})}function u(e){return t.getDependencyTree(e)}var c=!1;function l(e){c=e}function f(){return c}var p,d,b=new("undefined"!=typeof FinalizationRegistry?FinalizationRegistry:function(){function e(e){var t=this;this.finalize=void 0,this.registrations=new Map,this.sweepTimeout=void 0,this.sweep=function(e){void 0===e&&(e=1e4),clearTimeout(t.sweepTimeout),t.sweepTimeout=void 0;var r=Date.now();t.registrations.forEach((function(n,o){r-n.registeredAt>=e&&(t.finalize(n.value),t.registrations.delete(o))})),t.registrations.size>0&&t.scheduleSweep()},this.finalizeAllImmediately=function(){t.sweep(0)},this.finalize=e}var t=e.prototype;return t.register=function(e,t,r){this.registrations.set(r,{value:t,registeredAt:Date.now()}),this.scheduleSweep()},t.unregister=function(e){this.registrations.delete(e)},t.scheduleSweep=function(){void 0===this.sweepTimeout&&(this.sweepTimeout=setTimeout(this.sweep,1e4))},e}())((function(e){var t;null==(t=e.reaction)||t.dispose(),e.reaction=null}));function v(e){e.reaction=new t.Reaction("observer"+e.name,(function(){e.stateVersion=Symbol(),null==e.onStoreChange||e.onStoreChange()}))}function m(e,t){if(void 0===t&&(t="observed"),f())return e();var r=n.useRef(null);if(!r.current){var o={reaction:null,onStoreChange:null,stateVersion:Symbol(),name:t,subscribe:function(e){return b.unregister(o),o.onStoreChange=e,o.reaction||(v(o),o.stateVersion=Symbol()),function(){var e;o.onStoreChange=null,null==(e=o.reaction)||e.dispose(),o.reaction=null}},getSnapshot:function(){return o.stateVersion}};r.current=o}var a,s,c=r.current;if(c.reaction||(v(c),b.register(r,c,c)),n.useDebugValue(c.reaction,u),i.useSyncExternalStore(c.subscribe,c.getSnapshot,c.getSnapshot),c.reaction.track((function(){try{a=e()}catch(e){s=e}})),s)throw s;return a}var y,h="function"==typeof Symbol&&Symbol.for,g=null!=(p=null==(d=Object.getOwnPropertyDescriptor((function(){}),"name"))?void 0:d.configurable)&&p,w=h?Symbol.for("react.forward_ref"):"function"==typeof r.forwardRef&&r.forwardRef((function(e){return null})).$$typeof,S=h?Symbol.for("react.memo"):"function"==typeof r.memo&&r.memo((function(e){return null})).$$typeof,x={$$typeof:!0,render:!0,compare:!0,type:!0,displayName:!0};function O(e){var t=e.children||e.render;return"function"!=typeof t?null:m(t)}function R(e){var n=r.useState((function(){return t.observable(e,{},{deep:!1})}))[0];return t.runInAction((function(){Object.assign(n,e)})),n}O.displayName="Observer",s(o.unstable_batchedUpdates);var T=null!=(y=b.finalizeAllImmediately)?y:function(){};exports.Observer=O,exports._observerFinalizationRegistry=b,exports.clearTimers=T,exports.enableStaticRendering=l,exports.isObserverBatched=function(){return!0},exports.isUsingStaticRendering=f,exports.observer=function(e,t){var n;if(S&&e.$$typeof===S)throw new Error("[mobx-react-lite] You are trying to use `observer` on a function component wrapped in either another `observer` or `React.memo`. The observer already applies 'React.memo' for you.");if(f())return e;var o=null!=(n=null==t?void 0:t.forwardRef)&&n,i=e,a=e.displayName||e.name;if(w&&e.$$typeof===w&&(o=!0,"function"!=typeof(i=e.render)))throw new Error("[mobx-react-lite] `render` property of ForwardRef was not a function");var s,u,c=function(e,t){return m((function(){return i(e,t)}),a)};return c.displayName=e.displayName,g&&Object.defineProperty(c,"name",{value:e.name,writable:!0,configurable:!0}),e.contextTypes&&(c.contextTypes=e.contextTypes),o&&(c=r.forwardRef(c)),c=r.memo(c),s=e,u=c,Object.keys(s).forEach((function(e){x[e]||Object.defineProperty(u,e,Object.getOwnPropertyDescriptor(s,e))})),c},exports.observerBatching=s,exports.useAsObservableSource=R,exports.useLocalObservable=function(e,n){return r.useState((function(){return t.observable(e(),n,{autoBind:!0})}))[0]},exports.useLocalStore=function(e,n){var o=n&&R(n);return r.useState((function(){return t.observable(e(o),void 0,{autoBind:!0})}))[0]},exports.useObserver=function(e,t){return void 0===t&&(t="observed"),m(e,t)},exports.useStaticRendering=function(e){l(e)};
+	"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e,t=__webpack_require__(2),r=__webpack_require__(1),n=(e=r)&&"object"==typeof e&&"default"in e?e.default:e,o=__webpack_require__(4),i=__webpack_require__(88);if(!r.useState)throw new Error("mobx-react-lite requires React with Hooks support");if(!t.makeObservable)throw new Error("mobx-react-lite@3 requires mobx at least version 6 to be available");function a(e){e()}function s(e){e||(e=a),t.configure({reactionScheduler:e})}function u(e){return t.getDependencyTree(e)}var c=!1;function l(e){c=e}function f(){return c}var p,d,b=new("undefined"!=typeof FinalizationRegistry?FinalizationRegistry:function(){function e(e){var t=this;this.finalize=void 0,this.registrations=new Map,this.sweepTimeout=void 0,this.sweep=function(e){void 0===e&&(e=1e4),clearTimeout(t.sweepTimeout),t.sweepTimeout=void 0;var r=Date.now();t.registrations.forEach((function(n,o){r-n.registeredAt>=e&&(t.finalize(n.value),t.registrations.delete(o))})),t.registrations.size>0&&t.scheduleSweep()},this.finalizeAllImmediately=function(){t.sweep(0)},this.finalize=e}var t=e.prototype;return t.register=function(e,t,r){this.registrations.set(r,{value:t,registeredAt:Date.now()}),this.scheduleSweep()},t.unregister=function(e){this.registrations.delete(e)},t.scheduleSweep=function(){void 0===this.sweepTimeout&&(this.sweepTimeout=setTimeout(this.sweep,1e4))},e}())((function(e){var t;null==(t=e.reaction)||t.dispose(),e.reaction=null}));function v(e){e.reaction=new t.Reaction("observer"+e.name,(function(){e.stateVersion=Symbol(),null==e.onStoreChange||e.onStoreChange()}))}function m(e,t){if(void 0===t&&(t="observed"),f())return e();var r=n.useRef(null);if(!r.current){var o={reaction:null,onStoreChange:null,stateVersion:Symbol(),name:t,subscribe:function(e){return b.unregister(o),o.onStoreChange=e,o.reaction||(v(o),o.stateVersion=Symbol()),function(){var e;o.onStoreChange=null,null==(e=o.reaction)||e.dispose(),o.reaction=null}},getSnapshot:function(){return o.stateVersion}};r.current=o}var a,s,c=r.current;if(c.reaction||(v(c),b.register(r,c,c)),n.useDebugValue(c.reaction,u),i.useSyncExternalStore(c.subscribe,c.getSnapshot,c.getSnapshot),c.reaction.track((function(){try{a=e()}catch(e){s=e}})),s)throw s;return a}var y,h="function"==typeof Symbol&&Symbol.for,g=null!=(p=null==(d=Object.getOwnPropertyDescriptor((function(){}),"name"))?void 0:d.configurable)&&p,w=h?Symbol.for("react.forward_ref"):"function"==typeof r.forwardRef&&r.forwardRef((function(e){return null})).$$typeof,S=h?Symbol.for("react.memo"):"function"==typeof r.memo&&r.memo((function(e){return null})).$$typeof,x={$$typeof:!0,render:!0,compare:!0,type:!0,displayName:!0};function O(e){var t=e.children||e.render;return"function"!=typeof t?null:m(t)}function R(e){var n=r.useState((function(){return t.observable(e,{},{deep:!1})}))[0];return t.runInAction((function(){Object.assign(n,e)})),n}O.displayName="Observer",s(o.unstable_batchedUpdates);var T=null!=(y=b.finalizeAllImmediately)?y:function(){};exports.Observer=O,exports._observerFinalizationRegistry=b,exports.clearTimers=T,exports.enableStaticRendering=l,exports.isObserverBatched=function(){return!0},exports.isUsingStaticRendering=f,exports.observer=function(e,t){var n;if(S&&e.$$typeof===S)throw new Error("[mobx-react-lite] You are trying to use `observer` on a function component wrapped in either another `observer` or `React.memo`. The observer already applies 'React.memo' for you.");if(f())return e;var o=null!=(n=null==t?void 0:t.forwardRef)&&n,i=e,a=e.displayName||e.name;if(w&&e.$$typeof===w&&(o=!0,"function"!=typeof(i=e.render)))throw new Error("[mobx-react-lite] `render` property of ForwardRef was not a function");var s,u,c=function(e,t){return m((function(){return i(e,t)}),a)};return c.displayName=e.displayName,g&&Object.defineProperty(c,"name",{value:e.name,writable:!0,configurable:!0}),e.contextTypes&&(c.contextTypes=e.contextTypes),o&&(c=r.forwardRef(c)),c=r.memo(c),s=e,u=c,Object.keys(s).forEach((function(e){x[e]||Object.defineProperty(u,e,Object.getOwnPropertyDescriptor(s,e))})),c},exports.observerBatching=s,exports.useAsObservableSource=R,exports.useLocalObservable=function(e,n){return r.useState((function(){return t.observable(e(),n,{autoBind:!0})}))[0]},exports.useLocalStore=function(e,n){var o=n&&R(n);return r.useState((function(){return t.observable(e(o),void 0,{autoBind:!0})}))[0]},exports.useObserver=function(e,t){return void 0===t&&(t="observed"),m(e,t)},exports.useStaticRendering=function(e){l(e)};
 	//# sourceMappingURL=mobxreactlite.cjs.production.min.js.map
 
 
@@ -3370,7 +3370,7 @@
 	/*
 	 Modernizr 3.0.0pre (Custom Build) | MIT
 	*/
-	'use strict';var aa=__webpack_require__(1),m=__webpack_require__(11),r=__webpack_require__(83);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
+	'use strict';var aa=__webpack_require__(1),m=__webpack_require__(11),r=__webpack_require__(85);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
 	function ea(a,b){ca[a]=b;for(a=0;a<b.length;a++)ba.add(b[a])}
 	var fa=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ha=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,ia=Object.prototype.hasOwnProperty,
 	ja={},ka={};function la(a){if(ia.call(ka,a))return!0;if(ia.call(ja,a))return!1;if(ha.test(a))return ka[a]=!0;ja[a]=!0;return!1}function ma(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -14921,16 +14921,16 @@
 	  // Rejection tracking prevents a common issue where React gets into an
 	  // inconsistent state due to an error, but it gets swallowed by a Promise,
 	  // and the user has no idea what causes React's erratic future behavior.
-	  __webpack_require__(68).enable();
-	  window.Promise = __webpack_require__(67);
+	  __webpack_require__(70).enable();
+	  window.Promise = __webpack_require__(69);
 	}
 	
 	// fetch() polyfill for making API calls.
-	__webpack_require__(71);
+	__webpack_require__(73);
 	
 	// Object.assign() is commonly used with React.
 	// It will use the native implementation if it's present and isn't buggy.
-	Object.assign = __webpack_require__(65);
+	Object.assign = __webpack_require__(67);
 
 
 /***/ },
@@ -15182,7 +15182,7 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _reactSnowfall = __webpack_require__(79);
+	var _reactSnowfall = __webpack_require__(81);
 	
 	var _reactSnowfall2 = _interopRequireDefault(_reactSnowfall);
 	
@@ -15202,6 +15202,10 @@
 	
 	var _galienomics2 = _interopRequireDefault(_galienomics);
 	
+	var _flying = __webpack_require__(64);
+	
+	var _flying2 = _interopRequireDefault(_flying);
+	
 	__webpack_require__(54);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -15209,25 +15213,16 @@
 	function App() {
 	
 	  var snowflake1 = document.createElement('img');
-	  snowflake1.src = 'https://storage.googleapis.com/galiens/Galien%20Coin.png';
+	  snowflake1.src = _flying2.default;
 	  var snowflake2 = document.createElement('img');
-	  snowflake2.src = 'https://storage.googleapis.com/galiens/Galien%20Coin.png';
+	  snowflake2.src = _flying2.default;
 	
 	  var images = [snowflake1, snowflake2];
 	
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'snow' },
-	      _react2.default.createElement(_reactSnowfall2.default, {
-	        style: { background: "transparent" },
-	        snowflakeCount: 50,
-	        images: images,
-	        radius: [0.5, 80.0]
-	      })
-	    ),
+	    _react2.default.createElement('div', { className: 'snow' }),
 	    _react2.default.createElement('div', { className: 'background' }),
 	    _react2.default.createElement(
 	      'div',
@@ -15273,7 +15268,7 @@
 	    return _react2.default.createElement(
 	        'div',
 	        { className: 'section_about', id: 'about' },
-	        _react2.default.createElement('img', { src: 'https://storage.googleapis.com/galiens/alien%20on%20space.png', className: 'cloud_right' }),
+	        _react2.default.createElement('img', { src: 'https://ff585665cf5b17450b8db53a1f56e9412319cf4b9a946484314199b-apidata.googleusercontent.com/download/storage/v1/b/312412312/o/Untitled_Artwork%20(1).png?jk=ASOpP9iw1LX0uFkGsJEuUIB_qZSKXp0rtqRctgJdVFGsMG2kvVMgCEMgIHSYn1akhbiKaBTev1EJPFxwL3pX5JOk46dphcmj6cOFayIbj0hp6q2ni5zrll6tUjpxCLaDJjO3JzaPuDKvhZsvtikXljISJERXhnXqyho9ezwbRJTm_Cx6OkVn9D2Zx_BxKK6pC6CgJiQq1t5Ft9GCEJoF6kRwEWYAY8kTlyoJJNt2or8Q0-JuTSgJTWJlh3b0sdlEoLnFUXvd1ag1thG49iWoxq6S7OkLVzq6s9HLKkPOiD3cJEMSs-LfpRVY0QHpOpA_EgEhaxaazRwCJxdpqWkD-lCYP-qycw90G8JiUmRvi5F5dpBZwu6Sc-2hyTIzxtNbl0kei3lh3fKBhSZIflqciUhnmdOhKWhsKQbwSJRBe-LMmnMkN-dQaYmjYBFBfnzMQl2aP8vnLivxdr2P-DxQ42ulR_Eq_IP44G5usZ2k7YxJHTVJ3tX_AHmFuvTj8dOrfv4BNXqIQZmSHZ-Eq1r4DVvPhaO4c4J1VW6jLoC142iSTDOcMfBjduN3UF1GYmIKGIJbbBKoAV_a-UrzlfgM6BoDlDccEsGEVuQjjJHuMWDLWvU1sNwStEuBmWzvijMqrui78yvDenxgcV8yygPKCDKZC1mS4gusw9_1Mxeqv_5uub9VB--bo6ErFtm04xxqlFtywz-oAfdLJAPgQrFwGGUPjY57X29t5VKwe9ffJSvFwAeru65-zLBd-yGO18_Dfl6GvapQH4_6SkXt5VXf33CcuxeAT7inSPygHOVpMOcaFs_jMEqXO0oIh498qUdyWw0VyqFvEXdsjxjS6DLbO9cytPY8hYS6PigKhxWAEXDgC1T8wW4fzCjsXJRyFtFkFnE7V6S50lrkSnjcSjQ6-1oOq4nMfZ21K5OARaQSMTsnQZ3FlL6yRwUxb794OWeovWTfW8OsRXks3-BIOo8z0WqbOMJ1foE5j1MrzHBg5YWMx7Kbzs9SbHoe4DllL3TNx5HdwZR1D6UlmdUpAWQW_k5WWPODav4kxjChfXRWjwPXatQZ8Tv1lC4mbkV6YrsoToBLNm9stB-TPKxCrxgUJaQyGheRYAkw9gLZD4Vm8wLUhEXO_1LtGjMA0lpkLBO5wQ&isca=1', className: 'cloud_right' }),
 	        _react2.default.createElement(
 	            'div',
 	            { className: 'section_block_about_wrapper' },
@@ -15723,7 +15718,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { style: { zIndex: "4" } },
-	            currentstate === _store.states.Score && _react2.default.createElement(
+	            _react2.default.createElement(
 	              'div',
 	              { className: 'scoreForm' },
 	              _react2.default.createElement(
@@ -15842,7 +15837,7 @@
 	
 	var _fa2 = __webpack_require__(38);
 	
-	var _reactScroll = __webpack_require__(75);
+	var _reactScroll = __webpack_require__(77);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -16280,6 +16275,10 @@
 	
 	var _Flappy2 = _interopRequireDefault(_Flappy);
 	
+	var _bitcoin = __webpack_require__(66);
+	
+	var _bitcoin2 = _interopRequireDefault(_bitcoin);
+	
 	var _store = __webpack_require__(17);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -16294,7 +16293,7 @@
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'block_chara' },
-	                _react2.default.createElement('img', { src: 'https://storage.googleapis.com/galiens/Alien1.png', className: 'galien' })
+	                _react2.default.createElement('img', { src: _bitcoin2.default, className: 'galien' })
 	            ),
 	            _react2.default.createElement(
 	                'div',
@@ -16302,11 +16301,11 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'titleContainer' },
-	                    _react2.default.createElement('img', { src: 'https://storage.googleapis.com/galiens/Galien%20Coin.png', className: 'galienCoin', alt: 'Alien Fumeta' }),
+	                    _react2.default.createElement('img', { src: _bitcoin2.default, className: 'galienCoin', alt: 'Alien Fumeta' }),
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'coinTitle' },
-	                        'GALIENS'
+	                        'BITcoin'
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -16343,7 +16342,7 @@
 /* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(69);
+	module.exports = __webpack_require__(71);
 
 
 /***/ },
@@ -16378,10 +16377,22 @@
 /* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/sheet.3c5a4daa.png";
+	module.exports = __webpack_require__.p + "static/media/flying.c4105710.png";
 
 /***/ },
 /* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/sheet.7117bcdf.png";
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/bitcoin.8384611a.png";
+
+/***/ },
+/* 67 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16470,7 +16481,7 @@
 
 
 /***/ },
-/* 66 */
+/* 68 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -16656,7 +16667,7 @@
 
 
 /***/ },
-/* 67 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16769,7 +16780,7 @@
 
 
 /***/ },
-/* 68 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16887,7 +16898,7 @@
 	}
 
 /***/ },
-/* 69 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// This method of obtaining a reference to the global object needs to be
@@ -16908,7 +16919,7 @@
 	// Force reevalutation of runtime.js.
 	g.regeneratorRuntime = undefined;
 	
-	module.exports = __webpack_require__(70);
+	module.exports = __webpack_require__(72);
 	
 	if (hadRuntime) {
 	  // Restore the original runtime.
@@ -16925,7 +16936,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 70 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -17597,10 +17608,10 @@
 	  typeof self === "object" ? self : this
 	);
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(66)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(68)))
 
 /***/ },
-/* 71 */
+/* 73 */
 /***/ function(module, exports) {
 
 	(function(self) {
@@ -18039,7 +18050,7 @@
 
 
 /***/ },
-/* 72 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18094,7 +18105,7 @@
 	exports.default = (0, _scrollLink2.default)(ButtonElement);
 
 /***/ },
-/* 73 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18171,7 +18182,7 @@
 	exports.default = (0, _scrollElement2.default)(ElementWrapper);
 
 /***/ },
-/* 74 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18227,7 +18238,7 @@
 	exports.default = (0, _scrollLink2.default)(LinkElement);
 
 /***/ },
-/* 75 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18237,15 +18248,15 @@
 	});
 	exports.Helpers = exports.ScrollElement = exports.ScrollLink = exports.animateScroll = exports.scrollSpy = exports.Events = exports.scroller = exports.Element = exports.Button = exports.Link = undefined;
 	
-	var _Link = __webpack_require__(74);
+	var _Link = __webpack_require__(76);
 	
 	var _Link2 = _interopRequireDefault(_Link);
 	
-	var _Button = __webpack_require__(72);
+	var _Button = __webpack_require__(74);
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
-	var _Element = __webpack_require__(73);
+	var _Element = __webpack_require__(75);
 	
 	var _Element2 = _interopRequireDefault(_Element);
 	
@@ -18273,7 +18284,7 @@
 	
 	var _scrollElement2 = _interopRequireDefault(_scrollElement);
 	
-	var _Helpers = __webpack_require__(76);
+	var _Helpers = __webpack_require__(78);
 	
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 	
@@ -18292,7 +18303,7 @@
 	exports.default = { Link: _Link2.default, Button: _Button2.default, Element: _Element2.default, scroller: _scroller2.default, Events: _scrollEvents2.default, scrollSpy: _scrollSpy2.default, animateScroll: _animateScroll2.default, ScrollLink: _scrollLink2.default, ScrollElement: _scrollElement2.default, Helpers: _Helpers2.default };
 
 /***/ },
-/* 76 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18622,7 +18633,7 @@
 	module.exports = Helpers;
 
 /***/ },
-/* 77 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18644,7 +18655,7 @@
 	};
 
 /***/ },
-/* 78 */
+/* 80 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18720,7 +18731,7 @@
 	};
 
 /***/ },
-/* 79 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18736,7 +18747,7 @@
 	
 	var _config = __webpack_require__(23);
 	
-	var _hooks = __webpack_require__(80);
+	var _hooks = __webpack_require__(82);
 	
 	var _Snowflake = __webpack_require__(22);
 	
@@ -18829,7 +18840,7 @@
 	//# sourceMappingURL=Snowfall.js.map
 
 /***/ },
-/* 80 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19040,7 +19051,7 @@
 	//# sourceMappingURL=hooks.js.map
 
 /***/ },
-/* 81 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @license React v17.0.2
@@ -19069,7 +19080,7 @@
 
 
 /***/ },
-/* 82 */
+/* 84 */
 /***/ function(module, exports) {
 
 	/** @license React v0.20.2
@@ -19095,20 +19106,20 @@
 
 
 /***/ },
-/* 83 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(82);
+	  module.exports = __webpack_require__(84);
 	} else {
 	  module.exports = require('./cjs/scheduler.development.js');
 	}
 
 
 /***/ },
-/* 84 */
+/* 86 */
 /***/ function(module, exports) {
 
 	
@@ -19153,7 +19164,7 @@
 
 
 /***/ },
-/* 85 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19170,13 +19181,13 @@
 
 
 /***/ },
-/* 86 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(85);
+	  module.exports = __webpack_require__(87);
 	} else {
 	  module.exports = require('../cjs/use-sync-external-store-shim.development.js');
 	}
@@ -19184,4 +19195,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.b81b8368.js.map
+//# sourceMappingURL=main.c1249df2.js.map
