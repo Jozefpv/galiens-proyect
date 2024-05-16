@@ -12505,7 +12505,7 @@
 	      'div',
 	      { className: 'snow' },
 	      _react2.default.createElement(_reactSnowfall2.default, {
-	        style: { backgroundImage: "src('https://cdn.discordapp.com/attachments/315600040968060929/1240778624693571644/IMG_0062_1.PNG?ex=6647cca4&is=66467b24&hm=319139695daa6bc32d365a874cbdc37536dfa60e2f12a7a53dac3087e86762f3&')", zIndex: "1", position: "relative" },
+	        style: { backgroundColor: "transparent", zIndex: "1" },
 	        snowflakeCount: 10,
 	        images: images,
 	        radius: [50, 180.0]
@@ -13670,7 +13670,7 @@
 /* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/sheet.7117bcdf.png";
+	module.exports = __webpack_require__.p + "static/media/sheet.7d6f5fe1.png";
 
 /***/ },
 /* 66 */
@@ -16476,4 +16476,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.c5a78819.js.map
+//# sourceMappingURL=main.a08b2218.js.map
