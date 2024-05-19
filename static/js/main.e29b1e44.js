@@ -12552,7 +12552,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            { style: { display: 'block', paddingRight: "10px" } },
-	                            'Bitcoin was bitten. To be continued...'
+	                            'I\'m just a bitten coin'
 	                        )
 	                    )
 	                )
@@ -16456,4 +16456,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.32350977.js.map
+//# sourceMappingURL=main.e29b1e44.js.map
