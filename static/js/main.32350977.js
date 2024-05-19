@@ -13584,7 +13584,7 @@
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'coinTitle' },
-	                        'BittenBTC'
+	                        'BITcoin'
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -16456,4 +16456,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.c61524ea.js.map
+//# sourceMappingURL=main.32350977.js.map
