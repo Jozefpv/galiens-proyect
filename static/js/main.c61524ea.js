@@ -13158,14 +13158,14 @@
 	        _react2.default.createElement(
 	          "button",
 	          { className: "rrssButton", onClick: function onClick() {
-	              return window.open("https://twitter.com/loading26749", "_blank");
+	              return window.open("https://x.com/bittenbtc?s=21&t=Af6H4Ak_8z40ZY98br468w", "_blank");
 	            } },
 	          _react2.default.createElement(_fa.FaXTwitter, { style: { color: "black", fontSize: "25px" } })
 	        ),
 	        _react2.default.createElement(
 	          "button",
 	          { className: "rrssButton", onClick: function onClick() {
-	              return window.open("https://t.me/+s2-6v3DXbjk4NTY0", "_blank");
+	              return window.open("https://t.me/+6rvxswr9Z_EwOThk", "_blank");
 	            } },
 	          _react2.default.createElement(_fa.FaPaperPlane, { style: { color: "black", fontSize: "25px" } })
 	        ),
@@ -13584,7 +13584,7 @@
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'coinTitle' },
-	                        'BittenBtc'
+	                        'BittenBTC'
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -16456,4 +16456,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.bef1ff07.js.map
+//# sourceMappingURL=main.c61524ea.js.map
