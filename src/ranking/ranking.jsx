@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import './ranking.css'
 
+
 const Ranking = () => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -81,7 +82,7 @@ const Ranking = () => {
             <span className='rankingTitle'>Leaderboard</span>
             {ranking ? (
                 <div className='rankingSection'>
-                    <img src='https://cdn.discordapp.com/attachments/315600040968060929/1240779352954638436/Untitled_Artwork_1.png?ex=6647cd52&is=66467bd2&hm=55502379f608b28724c6c41c3d4500cc5443baf44be9d4776709334a2c4bb7df&' style={{ width: "120px", transform:"translateY(30px)" }}></img>
+                    <img src="https://storage.googleapis.com/bittenbtcbucket/Untitled_Artwork%20(1).png" style={{ width: "120px", transform:"translateY(30px)" }}></img>
                     <div className='tableContainer'>
                         <table className='rankingTable'>
                             <tr>

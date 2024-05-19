@@ -8,10 +8,10 @@ import Snowfall from 'react-snowfall';
 function Wrapper() {
 
     const snowflake1 = document.createElement('img')
-    snowflake1.src = "https://cdn.discordapp.com/attachments/315600040968060929/1240779352954638436/Untitled_Artwork_1.png?ex=6647cd52&is=66467bd2&hm=55502379f608b28724c6c41c3d4500cc5443baf44be9d4776709334a2c4bb7df&"
+    snowflake1.src = "https://storage.googleapis.com/bittenbtcbucket/Untitled_Artwork%20(1).png"
     const snowflake2 = document.createElement('img')
-    snowflake2.src = "https://cdn.discordapp.com/attachments/315600040968060929/1240779352954638436/Untitled_Artwork_1.png?ex=6647cd52&is=66467bd2&hm=55502379f608b28724c6c41c3d4500cc5443baf44be9d4776709334a2c4bb7df&"
-  
+    snowflake2.src = "https://storage.googleapis.com/bittenbtcbucket/Untitled_Artwork%20(1).png"
+
     const images = [snowflake1, snowflake2]
     return (
         <div className="wrapper">
@@ -25,11 +25,11 @@ function Wrapper() {
             </div>
             <div className='section_hero'>
                 <div className='block_chara'>
-                    <img src="https://cdn.discordapp.com/attachments/315600040968060929/1240779830216101969/COIN_PNG_1.png?ex=6647cdc4&is=66467c44&hm=5aee87b105de4471cec8ff8df42b4cf00865d59dbea21163082e0daa16d83336&" className='galien'></img>
+                    <img src="https://storage.googleapis.com/bittenbtcbucket/COIN%20PNG%20(1).png" className='galien'></img>
                 </div>
                 <div className='block_logo'>
                     <div className='titleContainer'>
-                        <img src="https://cdn.discordapp.com/attachments/315600040968060929/1240779830216101969/COIN_PNG_1.png?ex=6647cdc4&is=66467c44&hm=5aee87b105de4471cec8ff8df42b4cf00865d59dbea21163082e0daa16d83336&" className='galienCoin' alt="Alien Fumeta" />
+                        <img src="https://storage.googleapis.com/bittenbtcbucket/COIN%20PNG%20(1).png"  className='galienCoin' alt="Alien Fumeta" />
                         <span className='coinTitle'>BITcoin</span>
                     </div>
                     <div>

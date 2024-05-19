@@ -5,7 +5,7 @@
     z-index: 1;
     flex-direction: column;
     position: relative;
-    background-image: url("https://cdn.discordapp.com/attachments/315600040968060929/1240778624693571644/IMG_0062_1.PNG?ex=6647cca4&is=66467b24&hm=319139695daa6bc32d365a874cbdc37536dfa60e2f12a7a53dac3087e86762f3&");
+    background-image: url("https://storage.googleapis.com/bittenbtcbucket/IMG_0062%20(1).PNG");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5; /* Ajusta esto si es necesario */
@@ -95,6 +95,9 @@
 @media screen and (max-width: 700px) {
     .wrapper {
         flex-direction: row;
+        background-image: url("https://storage.googleapis.com/bittenbtcbucket/Fondo%20movil.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .block_logo {
@@ -110,16 +113,11 @@
     }
 
     .titleContainer {
-        color: #ff9009;
         font-family: "Londrina Solid", sans-serif;
         text-shadow: 2px 2px #000;
         letter-spacing: 2px;
         font-size: 75px;
     }
 
-    .section_hero{
-        background-image: url("https://ffa25bc8bc42d3824572ee94c43f768166d4079a14bc0aaaf9d23ae-apidata.googleusercontent.com/download/storage/v1/b/312412312/o/TAMAN%CC%83O%20IPHONE.png?jk=ASOpP9gZ76kXAzZsk6_N-0Oo-me1SQxpw4_WEhypn5WoSPEmJzrhnuTrsTo4NeAUphigDhoZ8_esPEENoOFEYwYk4gtz9alJAAb-IN49VcLFRxtWI_0oJqAs4DRS9Vw7za4WM3T-loFiZYQxrQKKevEIQgmh6FMemypFRfU0BVouhno3BoQH71wrdUP-7QG3MkGfXAqbzFUyevRbNk_PFZMmK_OIHo57RKFMEVQfsoLTj9Fthlxnaqa40loV4saNe7r8IrE88sikm6SCGLhVSVwbR4-axi1pAxzSo7qsa50Zfgru0_2prsZPYUe_feJrEjdIuXWXo9Ax2NFMzTb0ZvrkUQjGygpYaVxH6qjn8EgBC55BRR16U3RQ8fl3jel0A_lB4o86D4IteSH5rFjGpQLuWdxPUdnyD3a_SS2stgZx5GkaZaEg6euVrcQ4TUPk9UEcarbbYp15NPRR8Ui9SyMCQb9zUUeO1gm__NPMUkVeJ332LlVtD2vi5jA4fvfbXMpJVRtlhbhpy1RLfmuDHo7et0xtB6Y0_-xxF-VKdi6GDFd-8evbiVZUAXUd0bOzn1NtCSB9lbnnrW3XpuYwq646YggwuV4uNV9ScT-cOnYQnYyr2sKIDifkVY2P9iRRDmJWYICy2rJLiA0hU9w19pQOpr5_eq-ImNYb2SSgu_lmP2iPEXRhviQ5rM3biEEL1C-RxHRZZuO8YnMWTbev53s7zrC1fwvInhx2JRtfFeRiMZ3pijJRIfGKeSVwL31pTpoIdj84u2R59uPjMRc29qi9hc5GQF9f7o97hMbQWw5MjoDc1s6pfe8Z7jiFEyZPgC7glS-Qje1ac29xbOYgDP2mv8_bXtRweqEWFQTq7FtaLVrBt5BLuAFWvGcXYBUbkYRi9dOwlUQWcpziqYBzZx92LggBgZwbJOWGYKhBYDOyyMpDWK4UKD8h2t7QZoSGx59WTg6t7xsgEAbZmEc8I0mWtAASPa0y0X7STTFXV7WE-UFBa6PKAMXH9bd0qjlKZ20v-QJy_u5G48ojzt8HOhw3a69JxMi835t6kkuqOP0ERIbP8HS0swao35hr4i0IGicHZDOo1Dhna3vhq57ZQg4UptBwBQBQiGiVOlsBFG6DBODgyo4z_n89x7Es99-H&isca=1");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
+    
 }
