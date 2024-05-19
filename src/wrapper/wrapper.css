@@ -6,7 +6,7 @@
     flex-direction: column;
     position: relative;
     background-image: url("https://storage.googleapis.com/bittenbtcbucket/IMG_0062%20(1).PNG");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 5; /* Ajusta esto si es necesario */
     position: relative;
@@ -96,7 +96,7 @@
     .wrapper {
         flex-direction: row;
         background-image: url("https://storage.googleapis.com/bittenbtcbucket/Fondo%20movil.png");
-        background-size: cover;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
     }
 
