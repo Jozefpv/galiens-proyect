@@ -13172,7 +13172,7 @@
 	        _react2.default.createElement(
 	          "button",
 	          { className: "rrssButton", onClick: function onClick() {
-	              return window.open("https://www.pump.fun/profile/2VX1BTmRMND3i7dLyV8sYdiuDXEXcWkEXAPi9SuKysbJ", "_blank");
+	              return window.open("", "_blank");
 	            } },
 	          _react2.default.createElement(_cg.CgPill, { style: { color: "black", fontSize: "25px" } })
 	        )
@@ -16456,4 +16456,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.f8daf0a2.js.map
+//# sourceMappingURL=main.e29b1e44.js.map
