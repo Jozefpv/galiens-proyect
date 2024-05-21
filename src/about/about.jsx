@@ -12,9 +12,7 @@ function About() {
                     <div className='block_paragraph'>
                         <p className='para'>
                             <p style={{ display: 'block', paddingRight:"10px" }}>
-                            Bitcoin was bitten. 
-
-                            To be continued...
+                            I'm just a bitten coin
                             </p>
                         </p>
                     </div>

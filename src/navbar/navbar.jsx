@@ -19,10 +19,10 @@ function Navbar() {
           </ul>
         </div>
         <div className="rrssContainer">
-          <button className="rrssButton" onClick={() => window.open("https://twitter.com/loading26749", "_blank")}>
+          <button className="rrssButton" onClick={() => window.open("https://x.com/bittenbtc?s=21&t=Af6H4Ak_8z40ZY98br468w", "_blank")}>
             <FaXTwitter style={{ color: "black", fontSize: "25px" }} />
           </button>
-          <button className="rrssButton" onClick={() => window.open("https://t.me/+s2-6v3DXbjk4NTY0", "_blank")}>
+          <button className="rrssButton" onClick={() => window.open("https://t.me/+6rvxswr9Z_EwOThk", "_blank")}>
             <FaPaperPlane style={{ color: "black", fontSize: "25px" }} />
           </button>
           <button className="rrssButton" onClick={() => window.open("", "_blank")}>
